@@ -1,0 +1,30 @@
+//backend
+django-admin startproject core .
+python3 manage.py startapp blog
+python3 manage.py startapp blog_api
+python3 manage.py runserver
+python3 manage.py createsuperuser
+python3 manage.py makemigrations
+pip install djangorestframework-simplejwt
+python3 manage.py migrate
+pip install coverage
+pip install django-cors-headers
+pip install django
+python3 manage.py createsuperuser
+python3 -m venv venv
+source venv/bin/activate
+pip install djangorestframework
+coverage run --omit='*/venv/*' manage.py test
+pip install django-filter
+pip freeze > requirement.txt
+
+//frontend
+npx create-react-app frontend
+cd frontend
+npm start
+npm install react-router-dom
+npm install @material-ui/core
+npm install @material-ui/icons
+pip install django-cors-headers
+npm install react-icons
+npm install styled-components
